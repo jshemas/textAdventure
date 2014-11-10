@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="textAdventureApp">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body role="document">
+	<body role="document" ng-controller="textAdventureCtrl">
 		<div class="container">
 			<h1>
 				Hello World!
@@ -23,8 +23,16 @@
 			<p>
 				Welcome to Text Adventure!
 			</p>
+			<ul>
+				<li ng-repeat="phone in phones">
+					<span>{{phone.name}}</span>
+					<p>{{phone.snippet}}</p>
+				</li>
+			</ul>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="javascripts/bootstrap.min.js"></script>
+		<script src="javascripts/angular.min.js"></script>
+		<script src="javascripts/main.js"></script>
 	</body>
 </html>
