@@ -1,14 +1,43 @@
-[
-	{
-		"name": "Nexus S",
-		"snippet": "Fast just got faster with Nexus S."
-	},
-	{
-		"name": "Motorola XOOM™ with Wi-Fi",
-		"snippet": "The Next, Next Generation tablet."
-	},
-	{
-		"name": "MOTOROLA XOOM™",
-		"snippet": "The Next, Next Generation tablet."
-	}
-]
+{
+	"adventureName": "The room",
+	"adventureDescription": "You wake up in a room.",
+	"numberOfRounds": 2,
+	"paths": [
+		{
+			"id": 1,
+			"round": 1,
+			"output": "Open the door.",
+			"death": true
+		},
+		{
+			"id": 2,
+			"round": 1,
+			"output": "Look around.",
+			"death": false
+		},
+		{
+			"id": 3,
+			"round": 1,
+			"output": "Go to sleep.",
+			"death": true
+		},
+		{
+			"id": 4,
+			"round": 2,
+			"output": "Go to sleep.",
+			"death": true
+		},
+		{
+			"id": 5,
+			"round": 2,
+			"output": "Run away.",
+			"death": false
+		},
+		{
+			"id": 6,
+			"round": 2,
+			"output": "Stand there.",
+			"death": true
+		}
+	]
+}

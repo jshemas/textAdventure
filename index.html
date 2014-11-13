@@ -21,12 +21,18 @@
 				Hello World!
 			</h1>
 			<p>
-				Welcome to Text Adventure!
+				Welcome to Text Adventure! Life status: {{adventure.playerAlive}}
+			</p>
+			</br>
+			<h1>
+				{{adventure.adventureName}}
+			</h1>
+			<p>
+				{{adventure.adventureDescription}}
 			</p>
 			<ul>
-				<li ng-repeat="phone in phones">
-					<span>{{phone.name}}</span>
-					<p>{{phone.snippet}}</p>
+				<li ng-repeat="path in adventure.currentPaths">
+					<span ng-click="pathClick(path.id)">{{path.output}}</span>
 				</li>
 			</ul>
 		</div>
