@@ -28,6 +28,9 @@ textAdventureApp.controller('textAdventureCtrl', function ($scope, $http) {
 			if($scope.adventure.paths[i].id === id) {
 				if ($scope.adventure.paths[i].death) {
 					$scope.adventure.playerAlive = false;
+				} else {
+					$scope.adventure.currentRound = $scope.adventure.currentRound + 1;
+					updateCurrentPaths();
 				}
 			}
 		};
