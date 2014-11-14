@@ -32,7 +32,7 @@
 			</p>
 			<ul>
 				<li ng-repeat="path in adventure.currentPaths">
-					<span ng-click="pathClick(path.id)">{{path.output}}</span>
+					<span ng-click="pathClick(path.id)">{{path.pathDescription}}</span>
 				</li>
 			</ul>
 			<button type="button" ng-hide="adventure.playerAlive" ng-click="startOver()">Start Over</button>

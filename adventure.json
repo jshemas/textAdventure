@@ -1,43 +1,110 @@
 {
-	"adventureName": "The room",
-	"adventureDescription": "You wake up in a room.",
-	"numberOfRounds": 2,
+	"adventureName": "Dragons And Tears",
+	"adventureDescription": "You awaken to find yourself on cold flagstone. As you stand up you notice that the small room is lit by two torches. To the north there is a door, to the south a hole in the wall. What do you do?",
 	"paths": [
 		{
 			"id": 1,
 			"round": 1,
-			"output": "Open the door.",
+			"pathDescription": "OPEN THE DOOR",
+			"pathResult": "You cautiously open the door and start to walk forward when you foot catches a loose flagstone. You fall and break your neck. You are dead.",
+			"goToNextRound": false,
 			"death": true
 		},
 		{
 			"id": 2,
 			"round": 1,
-			"output": "Look around.",
+			"pathDescription": "TAKE A TORCH",
+			"pathResult": "You lift the torch out of the wall sconce and open the door. Before you stretches a dark corridor that fades into inky, tenebrous, blackness. You walk for what feels like an eternity before you realize that your torch is beginning to burn out. What do you do?",
+			"goToNextRound": true,
 			"death": false
 		},
 		{
 			"id": 3,
 			"round": 1,
-			"output": "Go to sleep.",
-			"death": true
+			"pathDescription": "GO THROUGH THE HOLE",
+			"pathResult": "You're not big enough to go through the hole. What would you like to do?",
+			"goToNextRound": false,
+			"death": false
 		},
 		{
 			"id": 4,
-			"round": 2,
-			"output": "Go to sleep.",
-			"death": true
+			"round": 1,
+			"pathDescription": "TAKE A NAP",
+			"pathResult": "You awaken to find yourself on cold flagstone. As you stand up you notice that the small room is lit by two torches. To the north there is a door, to the south a hole in the wall. What do you do?",
+			"goToNextRound": false,
+			"death": false
 		},
 		{
 			"id": 5,
 			"round": 2,
-			"output": "Run away.",
+			"pathDescription": "KEEP WALKING",
+			"pathResult": "You press forward, praying to the 31 gods of Diaz that your torch won't go out. Fortunately, it doesn't. Ahead of you darkness gives way to light as a dull indigo glow illuminates the corridor up ahead. You hear the sound of a large rock grinding against stone. What do you do?",	
+			"goToNextRound": true,
 			"death": false
 		},
 		{
 			"id": 6,
 			"round": 2,
-			"output": "Stand there.",
+			"pathDescription": "SEARCH FOR SECRET DOORS",
+			"pathResult": "There are no secret doors. What would you like to do?",
+			"goToNextRound": false,
+			"death": false
+		},
+		{
+			"id": 7,
+			"round": 2,
+			"pathDescription": "RUN BACK TO GET THE OTHER TORCH",
+			"pathResult": "You start to desperately run back to the main room when your foot catches a loose flagstone. You fall and break your neck. You are dead.",
+			"goToNextRound": false,
 			"death": true
+		},
+		{
+			"id": 8,
+			"round": 3,
+			"pathDescription": "KEEP WALKING",
+			"pathResult": "As you walk towards the indigo glow, the corridor gives way to a larger cavern, and the source of the light becomes apparent...the room is lit by a massive luminescent lake. Lapping at the lake is a unicorn. What do you do?",	
+			"goToNextRound": true,
+			"death": false
+		},
+		{
+			"id": 9,
+			"round": 3,
+			"pathDescription": "DRAW SWORD",
+			"pathResult": "You sense that an evil most evil is coming down the corridor. As you wait a loose flagstone falls from the ceiling. It lands on your head and breaks your neck. You are dead.",
+			"goToNextRound": false,
+			"death": true
+		},
+		{
+			"id": 10,
+			"round": 3,
+			"pathDescription": "CAST A SPELL",
+			"pathResult": "You do not know magic. What would you like to do?",
+			"goToNextRound": false,
+			"death": false
+		},
+		{
+			"id": 11,
+			"round": 4,
+			"pathDescription": "LOOK AT THE UNICORN",
+			"pathResult": "It looks like a unicorn. What would you like to do?",	
+			"goToNextRound": false,
+			"death": false
+		},
+		{
+			"id": 12,
+			"round": 4,
+			"pathDescription": "PET THE UNICORN",
+			"pathResult": "You run your hand through the unicorn's mane. The unicorn softly whinnies and nuzzles your head in return. His horn pokes you in the eye and you recall in pain. As you do so your foot catches a loose flagstone. You fall and break your neck. You are dead.",
+			"goToNextRound": false,
+			"death": true
+		},
+		{
+			"id": 13,
+			"round": 4,
+			"pathDescription": "KILL THE UNICORN",
+			"pathResult": "YOU WIN!!!",
+			"goToNextRound": false,
+			"death": false
 		}
 	]
 }
