@@ -18,24 +18,25 @@
 	<body role="document" ng-controller="textAdventureCtrl">
 		<div class="container">
 			<h1>
-				Hello World!
-			</h1>
-			<p>
-				Welcome to Text Adventure! Life status: {{adventure.playerAlive}}
-			</p>
-			</br>
-			<h1>
 				{{adventure.adventureName}}
 			</h1>
-			<p>
+			</br>
+			<p ng-show="adventure.currentPath == 0">
 				{{adventure.adventureDescription}}
 			</p>
+			<p>
+				{{adventure.currentPathDescription}}
+			</p>
 			<ul>
-				<li ng-repeat="path in adventure.currentPaths">
-					<span ng-click="pathClick(path.id)">{{path.pathDescription}}</span>
+				<li ng-show="adventure.playerAlive" ng-hide="adventure.hasWon" ng-repeat="path in adventure.currentPaths">
+					<span ng-click="pathClick(path.id)">
+						{{path.pathDescription}}
+					</span>
 				</li>
 			</ul>
-			<button type="button" ng-hide="adventure.playerAlive" ng-click="startOver()">Start Over</button>
+			<button type="button" ng-hide="adventure.playerAlive" ng-show="adventure.hasWon" ng-click="startOver()">
+				Start Over
+			</button>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="javascripts/bootstrap.min.js"></script>

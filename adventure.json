@@ -1,6 +1,7 @@
 {
 	"adventureName": "Dragons And Tears",
 	"adventureDescription": "You awaken to find yourself on cold flagstone. As you stand up you notice that the small room is lit by two torches. To the north there is a door, to the south a hole in the wall. What do you do?",
+	"winnngRound": 13,
 	"paths": [
 		{
 			"id": 1,
